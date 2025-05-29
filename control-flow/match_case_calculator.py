@@ -1,7 +1,8 @@
 # Prompting for user input
-Enter_the_first_number = float(input ("num1: "))
-Enter_the_second_number = float(input("num2: "))
+num1 = float(input ("Enter_the_first_number: ")) #first input number
+num2 = float(input("Enter_the_second_number: ")) #second input number
 Operation = input("Choose the operation (+, -, *, /):")
+
 # Performing the calculation using match case
 match Operation:
     case '+':
