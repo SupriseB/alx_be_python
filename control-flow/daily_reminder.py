@@ -19,6 +19,6 @@ match Task_priority:
 if Time_bound == "yes":
     message += " This task requires immediate attention today!"
 
-# Use a loop to display the reminder 3 times
+# Using a loop to display the reminder 3 times
 for _ in range(3):
     print(message)
