@@ -1,10 +1,10 @@
 # Prompting for user input
 num1 = float(input ("Enter the first number: "))
 num2 = float(input("Enter the second number: "))
-Operations = input("Choose the operation (+, -, *, /):")
+operation = input("Choose the operation (+, -, *, /):")
 
 # Performing the calculation using match case
-match operation case:
+match operation:
     case '+':
         result = num1 + num2
         print(f"The result of {num1} + {num2} is {result}")
