@@ -1,6 +1,6 @@
 # Prompting for user input
-num1 = float(input ("Enter_the_first_number: "))
-num2 = float(input("Enter_the_second_number: "))
+num1 = float(input ("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
 Operator = input("Choose the operation (+, -, *, /):")
 
 # Performing the calculation using match case
