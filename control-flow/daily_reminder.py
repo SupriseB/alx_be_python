@@ -8,13 +8,13 @@ priority = input("Priority (high/medium/low): ").lower()
 # Use match case to handle priority
 match priority:
     case "high":
-        Reminder = f"Reminder: '{task}' is a HIGH priority task."
+        message = f"Reminder: '{task}' is a HIGH priority task."
     case "medium":
-        Reminder = f"Reminder: '{task}' is a MEDIUM priority task."
+         message = f"Reminder: '{task}' is a MEDIUM priority task."
     case "low":
-        Reminder = f"Reminder: '{task}' is a LOW priority task."
+         message = f"Reminder: '{task}' is a LOW priority task."
     case _:
-        Reminder = f"Reminder: '{task}' has an UNKNOWN priority level."
+         message = f"Reminder: '{task}' has an UNKNOWN priority level."
 
 # Adjusting message if task is time-bound
 if time_bound == "yes":
@@ -22,4 +22,5 @@ if time_bound == "yes":
 
 # Use a loop to display the reminder 3 times
 for _ in range(3):
-    print(Reminder)
+    print(f"Reminder: '{task}' is a {task_priority.upper()} priority task." if task_priority in ['high','medium','low'] else f"Reminder: '{task}' has an UNKNOWN priority level." + (" This task requires immediate attention today!" if time_bound == "yes" else ""))
+
