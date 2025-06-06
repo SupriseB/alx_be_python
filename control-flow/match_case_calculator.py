@@ -4,7 +4,7 @@ num2 = float(input("Enter the second number: "))
 Operations = input("Choose the operation (+, -, *, /):")
 
 # Performing the calculation using match case
-match Operations:
+match Operation case:
     case '+':
         result = num1 + num2
         print(f"The result of {num1} + {num2} is {result}")
