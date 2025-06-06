@@ -2,11 +2,11 @@
 # Prompting for a single task
 task = input("Enter your task: ")
 time_bound = input("Is it time-bound? (yes/no): ").lower()
-task_priority = input("Priority (high/medium/low): ").lower()
+priority = input("Priority (high/medium/low): ").lower()
 
 
 # Use match case to handle priority
-match task_priority:
+match priority:
     case "high":
         message = f"Reminder: '{task}' is a HIGH priority task."
     case "medium":
