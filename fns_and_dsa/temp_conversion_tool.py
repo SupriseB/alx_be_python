@@ -25,10 +25,9 @@ def main():
             print(f"{temp}°F is {result:.2f}°C")
         else:
             raise ValueError("Invalid unit")
-    except ValueError as ve:
-        print(f"Error: {ve}")
+    except ValueError:
+        print("Invalid temperature. Please enter a numeric value.")
 
 # Run only if this file is executed directly
 if __name__ == "__main__":
     main()
-
