@@ -1,25 +1,39 @@
-#Objective: Implement a division calculator that robustly handles errors like division by zero and non-numeric inputs using command line arguments.
-#Task Description:
-#Create two Python scripts: robust_division_calculator.py, which contains the division logic including error handling, and main.py, which interfaces with the user through the command line.
-#robust_division_calculator.py:
-#Define a function safe_divide(numerator, denominator) that performs division, handling potential errors:
-#Division by Zero: Use a try-except block to catch ZeroDivisionError.
-#Non-numeric Input: Attempt to convert arguments to floats. Use a try-except block to catch ValueError for non-numeric inputs.
-#Return appropriate messages for errors or the result for successful division.
+# robust_division_calculator.py
 
- safe_divide(numerator, denominator):
+def safe_divide(numerator, denominator):
     try:
         num = float(numerator)
         denom = float(denominator)
         try:
             result = num / denom
-            return result
+            return f"The result of the division is {result}"
         except ZeroDivisionError:
             return "Error: Cannot divide by zero."
     except ValueError:
         return "Error: Please enter numeric values only."
 
 
+# main.py
+
+"""
+Command-Line Division Tool
+
+Usage:
+  python main.py <numerator> <denominator>
+
+Examples:
+  Normal Division:
+    python main.py 10 5
+    Output: The result of the division is 2.0
+
+  Division by Zero:
+    python main.py 10 0
+    Output: Error: Cannot divide by zero.
+
+  Invalid Input (Non-numeric):
+    python main.py ten 5
+    Output: Error: Please enter numeric values only.
+"""
 
 import sys
 from robust_division_calculator import safe_divide
@@ -37,21 +51,17 @@ def main():
 
 if __name__ == "__main__":
     main()
- 
+#Examples
+python main.py 10 5
+# The result of the division is 2.0
+
+python main.py 10 0
+# Error: Cannot divide by zero.
+
+python main.py ten 5
+# Error: Please enter numeric values only.
 
 
-#Examples:
-  Normal Division:
-    python main.py 10 5
-    Expected Output: The result of the division is 2.0
-
-  Division by Zero:
-    python main.py 10 0
-    Expected Output: Error: Cannot divide by zero.
-
-  Invalid Input (Non-numeric):
-    python main.py ten 5
-    Expected Output: Error: Please enter numeric values only.
 
 
 
