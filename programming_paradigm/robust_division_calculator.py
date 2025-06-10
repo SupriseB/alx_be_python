@@ -23,8 +23,8 @@ Usage:
 
 Examples:
   Normal Division:
-    python main.py 10 5
-    Output: The result of the division is 2.0
+    python main.py 12 2
+    Output: The result of the division is 6.0
 
   Division by Zero:
     python main.py 10 0
@@ -51,15 +51,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-#Examples
-python main.py 10 5
-# The result of the division is 2.0
 
-python main.py 10 0
-# Error: Cannot divide by zero.
-
-python main.py ten 5
-# Error: Please enter numeric values only.
 
 
 
