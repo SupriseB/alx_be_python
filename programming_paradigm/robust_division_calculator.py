@@ -37,3 +37,29 @@ def main():
 
 if __name__ == "__main__":
     main()
+ 
+
+"""
+Command-Line Division Tool
+--------------------------
+
+This script safely divides two numbers provided as command-line arguments.
+
+Usage:
+  python main.py <numerator> <denominator>
+
+Examples:
+  Normal Division:
+    python main.py 10 5
+    Expected Output: The result of the division is 2.0
+
+  Division by Zero:
+    python main.py 10 0
+    Expected Output: Error: Cannot divide by zero.
+
+  Invalid Input (Non-numeric):
+    python main.py ten 5
+    Expected Output: Error: Please enter numeric values only.
+"""
+
+
