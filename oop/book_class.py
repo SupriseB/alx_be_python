@@ -28,3 +28,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+1984 by George Orwell, published in 1949
+Book('1984', 'George Orwell', 1949)
+Deleting 1984
