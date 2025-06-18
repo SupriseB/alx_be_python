@@ -22,7 +22,7 @@ class Book:
         self.author = author
 
     def get_details(self):
-        return f"Title: {self.title}, Author: {self.author}"
+        return f" {self.title} by {self.author}"
 
     def __str__(self):
         return self.get_details()
