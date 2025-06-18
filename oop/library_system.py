@@ -22,7 +22,7 @@ class Book:
         self.author = author
 
     def get_details(self):
-        return f" {self.title} by {self.author}"
+        return f" Book - {self.title} by {self.author}"
 
     def __str__(self):
         return self.get_details()
@@ -34,7 +34,7 @@ class EBook(Book):
         self.file_size = file_size  # in MB
 
     def get_details(self):
-        return f"EBook - {super().get_details()}, File Size: {self.file_size}MB"
+        return f"EBook - {super().get_details()}, File Size: {self.file_size}KB"
 
     def __str__(self):
         return self.get_details()
